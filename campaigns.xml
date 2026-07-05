@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<campaigns>
+
+  <!-- Education -->
+  <campaign id="1">
+    <title>Educate a Child: School Supplies Drive</title>
+    <category>Education</category>
+    <description>Help us provide essential school supplies to 500 underprivileged children, ensuring they have the tools they need to succeed in their studies and build a brighter future.</description>
+    <goal>15000</goal>
+    <raised>11250</raised>
+    <image>https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&amp;q=80</image>
+    <imageAlt>Stack of colourful school books and a backpack on a desk</imageAlt>
+  </campaign>
+
+  <!-- Community Development -->
+  <campaign id="2">
+    <title>Clean Water for All: Village Well Project</title>
+    <category>Community Development</category>
+    <description>Support our initiative to construct new water wells in rural villages, providing access to clean and safe drinking water for thousands of residents and improving public health.</description>
+    <goal>50000</goal>
+    <raised>38700</raised>
+    <image>https://images.unsplash.com/photo-1541844053589-346841d0b34c?w=600&amp;q=80</image>
+    <imageAlt>Two workers digging a well in a dry rural landscape</imageAlt>
+  </campaign>
+
+  <!--  Environment -->
+  <campaign id="3">
+    <title>Protect Our Forests: Reforestation Initiative</title>
+    <category>Environment</category>
+    <description>Join us in planting 10,000 trees to restore deforested areas, combat climate change, and create vital habitats for wildlife. Every tree planted makes a lasting difference.</description>
+    <goal>25000</goal>
+    <raised>8400</raised>
+    <image>https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=600&amp;q=80</image>
+    <imageAlt>Gloved hands holding a green seedling in rich soil</imageAlt>
+  </campaign>
+
+  <!-- Disaster Relief -->
+  <campaign id="4">
+    <title>Emergency Food Relief for Displaced Families</title>
+    <category>Disaster Relief</category>
+    <description>Provide urgent food aid to families displaced by recent natural disasters. Your donation ensures they receive nutritious meals during their most critical time of need.</description>
+    <goal>30000</goal>
+    <raised>27500</raised>
+    <image>https://images.unsplash.com/photo-1593113598332-cd288d649433?w=600&amp;q=80</image>
+    <imageAlt>Packaged food relief supplies ready for distribution</imageAlt>
+  </campaign>
+
+  <!-- Animal Welfare -->
+  <campaign id="5">
+    <title>Save Our Strays: Animal Shelter Fund</title>
+    <category>Animal Welfare</category>
+    <description>Help us provide medical care, food, and shelter for abandoned and neglected animals. Your support gives these innocent creatures a second chance at a loving and safe home.</description>
+    <goal>20000</goal>
+    <raised>16800</raised>
+    <image>https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=600&amp;q=80</image>
+    <imageAlt>Veterinarian gently caring for a young dog</imageAlt>
+  </campaign>
+
+  <!-- Youth Development -->
+  <campaign id="6">
+    <title>Youth Sports Program: Equip Future Champions</title>
+    <category>Youth Development</category>
+    <description>Fund new equipment and coaching for our youth sports programs, offering children from low-income families the opportunity to participate in healthy, character-building activities.</description>
+    <goal>18000</goal>
+    <raised>9200</raised>
+    <image>https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&amp;q=80</image>
+    <imageAlt>Young children enthusiastically playing football on a sunny outdoor pitch</imageAlt>
+  </campaign>
+
+  <!-- Health -->
+  <campaign id="7">
+    <title>Community Health Clinic: Expanding Access to Care</title>
+    <category>Health</category>
+    <description>Help us expand our free community health clinic to serve more patients in underserved areas. Funds will go toward medical supplies, staff training, and facility improvements.</description>
+    <goal>40000</goal>
+    <raised>32000</raised>
+    <image>https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&amp;q=80</image>
+    <imageAlt>Healthcare professional in a clinic treating a patient</imageAlt>
+  </campaign>
+
+  <!-- Arts and Culture -->
+  <campaign id="8">
+    <title>Preserving Heritage: Community Arts Centre</title>
+    <category>Arts &amp; Culture</category>
+    <description>Support the restoration of our community arts centre, a hub for local culture, creativity, and expression. Together we can preserve our heritage and inspire future generations.</description>
+    <goal>75000</goal>
+    <raised>22500</raised>
+    <image>https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=600&amp;q=80</image>
+    <imageAlt>Colourful paintings displayed in a community arts gallery</imageAlt>
+  </campaign>
+
+  <!-- Education -->
+  <campaign id="9">
+    <title>Digital Literacy: Laptops for Learning</title>
+    <category>Education</category>
+    <description>Bridge the digital divide by providing refurbished laptops and internet access to students in rural schools, empowering them with the digital skills needed for the modern workforce.</description>
+    <goal>22000</goal>
+    <raised>15400</raised>
+    <image>https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&amp;q=80</image>
+    <imageAlt>A student using a laptop computer in a bright classroom</imageAlt>
+  </campaign>
+
+</campaigns>
