@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore HopeBridge's active campaigns. Filter by Education, Health, Environment, Disaster Relief and more. Join us in making a difference." />
+  <title>Campaigns | HopeBridge</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/campaigns.css" />
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner" id="site-header">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="HopeBridge — Home page">
+        <img src="logo.png" alt="HopeBridge logo" />
+        <span class="nav-logo-text">
+          <span class="nav-logo-name">HopeBridge</span>
+          <span class="nav-logo-tagline">Bridging Hope. Building Futures.</span>
+        </span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav-links" class="nav-links" role="navigation" aria-label="Main navigation">
+        <a href="index.html" aria-label="Home">Home</a>
+        <a href="about.html" aria-label="About Us">About Us</a>
+        <a href="campaigns.html" class="active" aria-current="page" aria-label="Campaigns">Campaigns</a>
+        <a href="volunteer.html" aria-label="Volunteer">Volunteer</a>
+        <a href="donate.html" class="btn-nav-cta" aria-label="Donate">Donate</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container text-center">
+        <span class="section-label">Make a Difference</span>
+        <h1 class="page-hero-title" id="page-title">Our Campaigns</h1>
+        <p class="page-hero-subtitle">
+          Explore our active campaigns and join us in making a meaningful difference in communities around the world.
+        </p>
+      </div>
+    </section>
+
+    <section class="filter-section" aria-labelledby="filter-label">
+      <div class="container">
+        <div class="filter-bar" role="group" aria-labelledby="filter-label">
+          <span class="filter-label-text" id="filter-label" aria-hidden="true">
+            <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+            Filter by Category:
+          </span>
+          <!-- Filter buttons — all categories from XML -->
+          <button class="filter-btn active" data-category="All" aria-pressed="true" aria-label="Show all campaigns"style="opacity: 1; color: rgb(255, 255, 255); background-color: rgb(200, 90, 58);"></button>>All</button>
+          <button class="filter-btn" data-category="Education" aria-pressed="false" aria-label="Filter by Education">Education</button>
+          <button class="filter-btn" data-category="Community Development" aria-pressed="false" aria-label="Filter by Community Development">Community Development</button>
+          <button class="filter-btn" data-category="Environment" aria-pressed="false" aria-label="Filter by Environment">Environment</button>
+          <button class="filter-btn" data-category="Disaster Relief" aria-pressed="false" aria-label="Filter by Disaster Relief">Disaster Relief</button>
+          <button class="filter-btn" data-category="Animal Welfare" aria-pressed="false" aria-label="Filter by Animal Welfare">Animal Welfare</button>
+          <button class="filter-btn" data-category="Youth Development" aria-pressed="false" aria-label="Filter by Youth Development">Youth Development</button>
+          <button class="filter-btn" data-category="Health" aria-pressed="false" aria-label="Filter by Health">Health</button>
+          <button class="filter-btn" data-category="Arts &amp; Culture" aria-pressed="false" aria-label="Filter by Arts and Culture">Arts &amp; Culture</button>
+        </div>
+
+        <!-- Results count updated by JS -->
+        <p class="results-count" id="results-count" aria-live="polite" aria-atomic="true"></p>
+      </div>
+    </section>
+
+    <section class="campaigns-section" aria-labelledby="campaigns-grid-heading">
+      <div class="container">
+        <h2 class="sr-only" id="campaigns-grid-heading">Campaign listings</h2>
+
+        <!-- Populated by campaigns.js from XML -->
+        <div class="campaigns-grid" id="campaigns-grid" role="list" aria-label="Campaigns list">
+          <div class="loading-placeholder" aria-live="polite">
+            <div class="spinner" aria-hidden="true"></div>
+            <p>Loading campaigns from database…</p>
+          </div>
+        </div>
+
+        <!-- No results message -->
+        <div class="no-results" id="no-results" hidden aria-live="polite">
+          <p>No campaigns found in this category. <button class="btn-text" id="reset-filter">Show all campaigns</button></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="HopeBridge home">
+            <img src="logo.png" alt="HopeBridge logo" class="footer-logo-img" />
+            <span class="nav-logo-text"><span class="nav-logo-name">HopeBridge</span></span>
+          </a>
+          <p>Creating sustainable change through community empowerment, education, and compassionate action.</p>
+        </div>
+        <nav class="footer-col" aria-label="Footer quick links">
+          <p class="footer-col-heading">Quick Links</p>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="campaigns.html">Our Campaigns</a></li>
+            <li><a href="donate.html">Make a Donation</a></li>
+            <li><a href="volunteer.html">Volunteer With Us</a></li>
+          </ul>
+        </nav>
+        <address class="footer-col" style="font-style:normal">
+          <p class="footer-col-heading">Contact Us</p>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            123 Hope Street, Charity City, Galle Road, Colombo
+          </div>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:info@hopebridge.org">info@hopebridge.org</a>
+          </div>
+        </address>
+        <div class="footer-col">
+          <p class="footer-col-heading">Follow Us</p>
+          <nav class="footer-social" aria-label="Social media links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Twitter">𝕏</a>
+            <a href="#" aria-label="Instagram">in</a>
+            <a href="#" aria-label="LinkedIn">Li</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 HopeBridge. All rights reserved.</p>
+        <nav class="footer-legal" aria-label="Legal links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/campaigns.js"></script>
+</body>
+</html>

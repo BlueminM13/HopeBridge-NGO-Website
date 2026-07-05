@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Volunteer with HopeBridge. Join thousands of changemakers and make a real difference in communities around the world." />
+  <title>Volunteer | HopeBridge</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/volunteer.css" />
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner" id="site-header">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="HopeBridge — Home page">
+        <img src="logo.png" alt="HopeBridge logo" />
+        <span class="nav-logo-text">
+          <span class="nav-logo-name">HopeBridge</span>
+          <span class="nav-logo-tagline">Bridging Hope. Building Futures.</span>
+        </span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav-links" class="nav-links" role="navigation" aria-label="Main navigation">
+        <a href="index.html" aria-label="Home">Home</a>
+        <a href="about.html" aria-label="About Us">About Us</a>
+        <a href="campaigns.html" aria-label="Campaigns">Campaigns</a>
+        <a href="volunteer.html" class="active" aria-current="page" aria-label="Volunteer">Volunteer</a>
+        <a href="donate.html" class="btn-nav-cta" aria-label="Donate">Donate</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="vol-page-hero" aria-labelledby="vol-page-title">
+      <div class="vol-hero-overlay"></div>
+      <div class="container vol-hero-content">
+        <div class="vol-hero-text">
+          <span class="section-label">Become a Bridge Builder To Hope</span>
+          <h1 id="vol-page-title" class="vol-hero-title">
+            Be the Change<br />You Wish to See
+          </h1>
+          <p class="vol-hero-subtitle">
+            Join our team of dedicated volunteers and be part of meaningful change.
+            Whether you have a few hours a week or can commit to a long-term project,
+            your skills and passion are just what we need.
+          </p>
+          <div class="vol-hero-features" role="list">
+            <div class="vol-hero-feat" role="listitem">
+              <span class="feat-icon" aria-hidden="true">🌍</span>
+              <span><strong>Global Impact</strong> — Work on projects across borders and cultures.</span>
+            </div>
+            <div class="vol-hero-feat" role="listitem">
+              <span class="feat-icon" aria-hidden="true">✅</span>
+              <span><strong>Trusted Community</strong> — Join a verified network of changemakers.</span>
+            </div>
+            <div class="vol-hero-feat" role="listitem">
+              <span class="feat-icon" aria-hidden="true">🕐</span>
+              <span><strong>Flexible Hours</strong> — Volunteer on your own schedule.</span>
+            </div>
+          </div>
+        </div>
+        <div class="vol-hero-img-wrap">
+          <img
+            src="volunteer.jpg"
+            alt="Volunteer holding a camera in a bright community classroom"
+            class="vol-hero-img"
+            loading="eager"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Application Form -->
+    <section class="vol-form-section" aria-labelledby="vol-form-title">
+      <div class="container">
+
+        <div class="vol-form-intro text-center">
+          <div class="vol-form-icon" aria-hidden="true">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--clr-white)" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h2 id="vol-form-title" class="vol-form-heading">Join the HopeBridge Team</h2>
+          <p class="vol-form-subheading">
+            We believe in the power of people. Whether you have technical skills or a passion for service, there is a place for you here.
+          </p>
+        </div>
+
+        <!-- Form Card -->
+        <div class="form-card vol-form-card">
+        
+          <form id="volunteer-form" novalidate aria-label="Volunteer application form">
+
+            <fieldset class="form-fieldset">
+              <legend class="fieldset-legend">Personal Information</legend>
+
+              <div class="form-group">
+                <label class="form-label" for="vol-name">
+                  Full Name <span class="required-star" aria-hidden="true">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="vol-name"
+                  name="vol-name"
+                  class="form-input"
+                  placeholder="John Doe"
+                  autocomplete="name"
+                  aria-required="true"
+                  aria-describedby="vol-name-error"
+                />
+                <span id="vol-name-error" class="field-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-row">
+                
+                <div class="form-group">
+                  <label class="form-label" for="vol-email">
+                    Email Address <span class="required-star" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    id="vol-email"
+                    name="vol-email"
+                    class="form-input"
+                    placeholder="john@example.com"
+                    autocomplete="email"
+                    aria-required="true"
+                    aria-describedby="vol-email-error"
+                  />
+                  <span id="vol-email-error" class="field-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="vol-phone">
+                    Phone Number <span class="required-star" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="tel"
+                    id="vol-phone"
+                    name="vol-phone"
+                    class="form-input"
+                    placeholder="077 765 8956"
+                    autocomplete="tel"
+                    aria-required="true"
+                    aria-describedby="vol-phone-error"
+                  />
+                  <span id="vol-phone-error" class="field-error" role="alert" aria-live="polite"></span>
+                </div>
+              </div>
+
+            </fieldset>
+
+            <fieldset class="form-fieldset">
+              <legend class="fieldset-legend">Volunteer Details</legend>
+
+              <div class="form-group">
+                <label class="form-label" for="vol-skills">
+                  Skills &amp; Expertise
+                  <span class="form-hint">(Optional)</span>
+                </label>
+                <input
+                  type="text"
+                  id="vol-skills"
+                  name="vol-skills"
+                  class="form-input"
+                  placeholder="e.g. Teaching, Event Planning, Graphic Design"
+                  aria-label="Your skills and areas of expertise"
+                />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="vol-availability">
+                  Availability
+                  <span class="form-hint">(Optional)</span>
+                </label>
+                <select
+                  id="vol-availability"
+                  name="vol-availability"
+                  class="form-select"
+                  aria-label="Select your availability for volunteering"
+                >
+                  <option value="" disabled selected>Select your availability</option>
+                  <option value="weekday-mornings">Weekday Mornings</option>
+                  <option value="weekday-afternoons">Weekday Afternoons</option>
+                  <option value="weekday-evenings">Weekday Evenings</option>
+                  <option value="weekends">Weekends Only</option>
+                  <option value="flexible">Flexible / Any Time</option>
+                  <option value="remote">Remote / Online Only</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="vol-experience">
+                  Previous Volunteer Experience
+                  <span class="form-hint">(Optional)</span>
+                </label>
+                <textarea
+                  id="vol-experience"
+                  name="vol-experience"
+                  class="form-textarea"
+                  placeholder="Tell us about your previous volunteer work…"
+                  rows="4"
+                  aria-label="Describe your previous volunteering experience"
+                ></textarea>
+              </div>
+
+              <div class="form-group">
+                <fieldset>
+                  <legend class="form-label">
+                    Areas of Interest
+                    <span class="form-hint">(Select all that apply)</span>
+                  </legend>
+                  <div class="interest-grid" role="group" aria-label="Areas of interest checkboxes">
+                    <label class="checkbox-option interest-option">
+                      <input type="checkbox" name="interest" value="Community Outreach" aria-label="Community Outreach" />
+                      Community Outreach
+                    </label>
+                    <label class="checkbox-option interest-option">
+                      <input type="checkbox" name="interest" value="Education & Tutoring" aria-label="Education and Tutoring" />
+                      Education &amp; Tutoring
+                    </label>
+                    <label class="checkbox-option interest-option">
+                      <input type="checkbox" name="interest" value="Fundraising" aria-label="Fundraising" />
+                      Fundraising
+                    </label>
+                    <label class="checkbox-option interest-option">
+                      <input type="checkbox" name="interest" value="Event Planning" aria-label="Event Planning" />
+                      Event Planning
+                    </label>
+                    <label class="checkbox-option interest-option">
+                      <input type="checkbox" name="interest" value="Administrative Support" aria-label="Administrative Support" />
+                      Administrative Support
+                    </label>
+                    <label class="checkbox-option interest-option">
+                      <input type="checkbox" name="interest" value="Marketing & Communications" aria-label="Marketing and Communications" />
+                      Marketing &amp; Communications
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+
+            </fieldset>
+
+            <div class="form-group consent-group">
+              <label class="checkbox-option consent-checkbox" for="vol-consent">
+                <input
+                  type="checkbox"
+                  id="vol-consent"
+                  name="vol-consent"
+                  aria-describedby="consent-error"
+                />
+                I understand that a background check may be required for certain volunteer positions and I consent to this process if necessary.
+              </label>
+              <span id="consent-error" class="field-error" role="alert" aria-live="polite"></span>
+            </div>
+
+           
+            <button type="submit" class="btn btn-volunteer-submit" id="vol-submit" aria-label="Submit your volunteer application">
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              Submit Application
+            </button>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <div class="success-overlay" id="success-overlay" role="dialog" aria-modal="true" aria-labelledby="vol-success-title" aria-describedby="vol-success-msg">
+    <div class="success-modal">
+      <div class="success-icon" aria-hidden="true">🎉</div>
+      <h3 id="vol-success-title">Application Submitted!</h3>
+      <p id="vol-success-msg">
+        Thank you for applying to volunteer with HopeBridge! Our team will review your application and contact you within 3–5 business days.
+      </p>
+      <button class="btn btn-teal" id="close-success" aria-label="Close this message">
+        Close
+      </button>
+    </div>
+  </div>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="HopeBridge home">
+            <img src="logo.png" alt="HopeBridge logo" class="footer-logo-img" />
+            <span class="nav-logo-text"><span class="nav-logo-name">HopeBridge</span></span>
+          </a>
+          <p>Creating sustainable change through community empowerment, education, and compassionate action.</p>
+        </div>
+        <nav class="footer-col" aria-label="Footer quick links">
+          <p class="footer-col-heading">Quick Links</p>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="campaigns.html">Our Campaigns</a></li>
+            <li><a href="donate.html">Make a Donation</a></li>
+            <li><a href="volunteer.html">Volunteer With Us</a></li>
+          </ul>
+        </nav>
+        <address class="footer-col" style="font-style:normal">
+          <p class="footer-col-heading">Contact Us</p>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>123 Hope Street, Charity City, Galle Road, Colombo</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+            <a href="tel:+94112875676">+94 112 875 676</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:info@hopebridge.org">info@hopebridge.org</a>
+          </div>
+        </address>
+        <div class="footer-col">
+          <p class="footer-col-heading">Follow Us</p>
+          <nav class="footer-social" aria-label="Social media links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Twitter">𝕏</a>
+            <a href="#" aria-label="Instagram">in</a>
+            <a href="#" aria-label="LinkedIn">Li</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 HopeBridge. All rights reserved.</p>
+        <nav class="footer-legal" aria-label="Legal links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/volunteer.js"></script>
+</body>
+</html>

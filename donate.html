@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Make a donation to HopeBridge and help us create lasting change in communities around the world." />
+  <title>Donate | HopeBridge</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/donate.css" />
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner" id="site-header">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="HopeBridge — Home page">
+        <img src="logo.png" alt="HopeBridge logo" />
+        <span class="nav-logo-text">
+          <span class="nav-logo-name">HopeBridge</span>
+          <span class="nav-logo-tagline">Bridging Hope. Building Futures.</span>
+        </span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav-links" class="nav-links" role="navigation" aria-label="Main navigation">
+        <a href="index.html" aria-label="Home">Home</a>
+        <a href="about.html" aria-label="About Us">About Us</a>
+        <a href="campaigns.html" aria-label="Campaigns">Campaigns</a>
+        <a href="volunteer.html" aria-label="Volunteer">Volunteer</a>
+        <a href="donate.html" class="active btn-nav-cta" aria-current="page" aria-label="Donate">Donate</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="donate-hero" aria-labelledby="donate-title">
+      <div class="container text-center">
+        <div class="donate-icon" aria-hidden="true">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="var(--clr-white)" stroke="none"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <h1 id="donate-title" class="donate-hero-title">Make a Donation</h1>
+        <p class="donate-hero-subtitle">
+          Every contribution, no matter the size, helps us maintain the 'bridge' to safety for those in need. Donate &amp; continue our mission to create lasting impact in communities around the world.
+        </p>
+      </div>
+    </section>
+
+    <!-- Donation Chart -->
+    <section class="donate-chart-section" aria-labelledby="chart-heading">
+      <div class="container">
+        <div class="donate-chart-card">
+          <div class="donate-chart-text">
+            <h2 id="chart-heading" class="donate-chart-title">Where Your Giving Goes:<br />Transparency &amp; Impact</h2>
+            <p class="donate-chart-desc">Ensuring every donation makes a real difference — see how your generosity is distributed across our active campaigns.</p>
+            <ul class="donate-chart-legend" role="list" aria-label="Donation breakdown by campaign category">
+              <li class="legend-item" role="listitem">
+                <span class="legend-dot" style="background:#C85A3A" aria-hidden="true"></span>
+                <strong>28%</strong> Education
+              </li>
+              <li class="legend-item" role="listitem">
+                <span class="legend-dot" style="background:#1A8080" aria-hidden="true"></span>
+                <strong>20%</strong> Health
+              </li>
+              <li class="legend-item" role="listitem">
+                <span class="legend-dot" style="background:#4a9e5c" aria-hidden="true"></span>
+                <strong>17%</strong> Environment
+              </li>
+              <li class="legend-item" role="listitem">
+                <span class="legend-dot" style="background:#F2824A" aria-hidden="true"></span>
+                <strong>14%</strong> Community Development
+              </li>
+              <li class="legend-item" role="listitem">
+                <span class="legend-dot" style="background:#D4A04A" aria-hidden="true"></span>
+                <strong>10%</strong> Disaster Relief
+              </li>
+              <li class="legend-item" role="listitem">
+                <span class="legend-dot" style="background:#8B6FD4" aria-hidden="true"></span>
+                <strong>6%</strong> Youth Development
+              </li>
+              <li class="legend-item" role="listitem">
+                <span class="legend-dot" style="background:#5B9BD5" aria-hidden="true"></span>
+                <strong>3%</strong> Animal Welfare
+              </li>
+              <li class="legend-item" role="listitem">
+                <span class="legend-dot" style="background:#d0d0d0" aria-hidden="true"></span>
+                <strong>2%</strong> Arts &amp; Culture
+              </li>
+            </ul>
+          </div>
+          <div class="donate-chart-canvas" aria-hidden="true">
+            <canvas id="donationChart" width="260" height="260" aria-label="Donut chart showing donation breakdown by campaign category"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Donation Form Section -->
+    <section class="donate-form-section" aria-labelledby="form-heading">
+      <div class="container">
+        <div class="form-card">
+          <h2 class="sr-only" id="form-heading">Donation form</h2>
+
+          <form id="donate-form" novalidate aria-label="Donation form">
+            <fieldset class="form-fieldset">
+              <legend class="fieldset-legend">Personal Information</legend>
+
+              <div class="form-row">
+
+                <!-- Full Name -->
+                <div class="form-group">
+                  <label class="form-label" for="donor-name">
+                    Full Name <span class="required-star" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="donor-name"
+                    name="donor-name"
+                    class="form-input"
+                    placeholder="John Doe"
+                    autocomplete="name"
+                    aria-required="true"
+                    aria-describedby="name-error"
+                  />
+                  <span id="name-error" class="field-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <!-- Email input -->
+                <div class="form-group">
+                  <label class="form-label" for="donor-email">
+                    Email Address <span class="required-star" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    id="donor-email"
+                    name="donor-email"
+                    class="form-input"
+                    placeholder="john@example.com"
+                    autocomplete="email"
+                    aria-required="true"
+                    aria-describedby="email-error"
+                  />
+                  <span id="email-error" class="field-error" role="alert" aria-live="polite"></span>
+                </div>
+
+              </div>
+
+              <!--Password input -->
+              <div class="form-group">
+                <label class="form-label" for="donor-password">
+                  Create Account Password
+                  <span class="form-hint">(Optional — save your donation history)</span>
+                </label>
+                <div class="password-wrap">
+                  <input
+                    type="password"
+                    id="donor-password"
+                    name="donor-password"
+                    class="form-input"
+                    placeholder="Min. 8 characters"
+                    autocomplete="new-password"
+                    aria-describedby="password-hint"
+                  />
+                  <button type="button" class="toggle-password" id="toggle-password" aria-label="Show or hide password" aria-controls="donor-password">
+                    <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                  </button>
+                </div>
+                <span id="password-hint" class="form-hint-text">Your password must be at least 8 characters long.</span>
+              </div>
+
+            </fieldset>
+
+            <!-- Donation-->
+            <fieldset class="form-fieldset">
+              <legend class="fieldset-legend">Donation Details</legend>
+
+              <div class="form-row">
+
+                <!-- Donation Amount -->
+                <div class="form-group">
+                  <label class="form-label" for="donation-amount">
+                    Donation Amount (USD) <span class="required-star" aria-hidden="true">*</span>
+                  </label>
+                  <div class="amount-wrap">
+                    <span class="amount-symbol" aria-hidden="true">$</span>
+                    <input
+                      type="number"
+                      id="donation-amount"
+                      name="donation-amount"
+                      class="form-input amount-input"
+                      placeholder="50.00"
+                      aria-required="true"
+                      aria-describedby="amount-error"
+                    />
+                  </div>
+                  <span id="amount-error" class="field-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <!-- Campaign selector-->
+                <div class="form-group">
+                  <label class="form-label" for="donation-campaign">
+                    Campaign <span class="form-hint">(Optional)</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="donation-campaign"
+                    name="donation-campaign"
+                    class="form-input"
+                    placeholder="General Fund"
+                    list="campaign-options"
+                  />
+                  <datalist id="campaign-options">
+                    <option value="General Fund" />
+                    <option value="Educate a Child" />
+                    <option value="Clean Water for All" />
+                    <option value="Protect Our Forests" />
+                    <option value="Emergency Food Relief" />
+                    <option value="Save Our Strays" />
+                  </datalist>
+                </div>
+
+              </div>
+
+              <!-- Amount Presets -->
+              <div class="form-group">
+                <span class="form-label" id="preset-label">Quick Select Amount</span>
+                <div class="amount-presets" role="group" aria-labelledby="preset-label">
+                  <button type="button" class="preset-btn" data-amount="10" aria-label="Donate $10">$10</button>
+                  <button type="button" class="preset-btn" data-amount="25" aria-label="Donate $25">$25</button>
+                  <button type="button" class="preset-btn" data-amount="50" aria-label="Donate $50">$50</button>
+                  <button type="button" class="preset-btn" data-amount="100" aria-label="Donate $100">$100</button>
+                  <button type="button" class="preset-btn" data-amount="250" aria-label="Donate $250">$250</button>
+                </div>
+              </div>
+
+              <!-- Donation Type -->
+              <div class="form-group">
+                <fieldset>
+                  <legend class="form-label">
+                    Donation Type <span class="required-star" aria-hidden="true">*</span>
+                  </legend>
+                  <div class="radio-group radio-row" role="radiogroup" aria-required="true" aria-describedby="dtype-error">
+                    <label class="radio-option">
+                      <input type="radio" name="donation-type" value="one-time" aria-label="One-time donation" />
+                      One-time
+                    </label>
+                    <label class="radio-option">
+                      <input type="radio" name="donation-type" value="monthly" aria-label="Monthly recurring donation" />
+                      Monthly
+                    </label>
+                  </div>
+                  <span id="dtype-error" class="field-error" role="alert" aria-live="polite"></span>
+                </fieldset>
+              </div>
+
+              <!-- Areas of Support -->
+              <div class="form-group">
+                <fieldset>
+                  <legend class="form-label">Areas of Support</legend>
+                  <p class="form-hint-text mb-sm">Choose the causes you care about most.</p>
+                  <div class="checkbox-grid" role="group" aria-label="Areas of support checkboxes">
+                    <label class="checkbox-option">
+                      <input type="checkbox" name="area" value="Education" aria-label="Support Education" />
+                      📚 Education
+                    </label>
+                    <label class="checkbox-option">
+                      <input type="checkbox" name="area" value="Health" aria-label="Support Health" />
+                      🏥 Health
+                    </label>
+                    <label class="checkbox-option">
+                      <input type="checkbox" name="area" value="Environment" aria-label="Support Environment" />
+                      🌿 Environment
+                    </label>
+                    <label class="checkbox-option">
+                      <input type="checkbox" name="area" value="Disaster Relief" aria-label="Support Disaster Relief" />
+                      🆘 Disaster Relief
+                    </label>
+                    <label class="checkbox-option">
+                      <input type="checkbox" name="area" value="Youth Development" aria-label="Support Youth Development" />
+                      ⚽ Youth Development
+                    </label>
+                    <label class="checkbox-option">
+                      <input type="checkbox" name="area" value="Animal Welfare" aria-label="Support Animal Welfare" />
+                      🐾 Animal Welfare
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <!-- Message to NGO -->
+              <div class="form-group">
+                <label class="form-label" for="donor-message">
+                  Message to HopeBridge <span class="form-hint">(Optional)</span>
+                </label>
+                <textarea
+                  id="donor-message"
+                  name="donor-message"
+                  class="form-textarea"
+                  placeholder="Share why you're supporting our cause…"
+                  rows="4"
+                  aria-label="Personal message to HopeBridge"
+                ></textarea>
+              </div>
+
+            </fieldset>
+
+            <!-- PAYMENT METHOD-->
+            <fieldset class="form-fieldset">
+              <legend class="fieldset-legend">Payment Method</legend>
+
+              <div class="radio-group payment-group" role="radiogroup" aria-label="Choose payment method" aria-describedby="payment-error">
+                <label class="radio-option payment-option">
+                  <input type="radio" name="payment-method" value="card" aria-label="Pay by Credit or Debit Card" />
+                  <span class="payment-icon" aria-hidden="true">💳</span>
+                  Credit / Debit Card
+                </label>
+                <label class="radio-option payment-option">
+                  <input type="radio" name="payment-method" value="paypal" aria-label="Pay with PayPal" />
+                  <span class="payment-icon" aria-hidden="true">🅿️</span>
+                  PayPal
+                </label>
+                <label class="radio-option payment-option">
+                  <input type="radio" name="payment-method" value="bank" aria-label="Pay by Bank Transfer" />
+                  <span class="payment-icon" aria-hidden="true">🏦</span>
+                  Bank Transfer
+                </label>
+              </div>
+              <span id="payment-error" class="field-error" role="alert" aria-live="polite"></span>
+
+            </fieldset>
+
+            <!-- Terms & Conditions -->
+            <div class="form-group terms-group">
+              <label class="checkbox-option terms-checkbox" for="agree-terms">
+                <input
+                  type="checkbox"
+                  id="agree-terms"
+                  name="agree-terms"
+                  aria-required="true"
+                  aria-describedby="terms-error"
+                />
+                I agree to the
+                <a href="#" class="terms-link" aria-label="Read terms and conditions">terms and conditions</a>
+                and understand that my donation will be used to support the organisation's mission and programs.
+              </label>
+              <span id="terms-error" class="field-error" role="alert" aria-live="polite"></span>
+            </div>
+
+            <button type="submit" class="btn btn-teal btn-lg submit-btn" id="donate-submit" aria-label="Complete your donation">
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              Complete Donation
+            </button>
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="success-overlay" id="success-overlay" role="dialog" aria-modal="true" aria-labelledby="success-title" aria-describedby="success-message">
+    <div class="success-modal">
+      <div class="success-icon" aria-hidden="true">❤️</div>
+      <h3 id="success-title">Thank You for Your Generosity!</h3>
+      <p id="success-message">
+        Your donation has been submitted successfully. You will receive a confirmation email shortly. Your support makes a real difference!
+      </p>
+      <button class="btn btn-teal" id="close-success" aria-label="Close this message and return to the page">
+        Close
+      </button>
+    </div>
+  </div>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="HopeBridge home">
+            <img src="logo.png" alt="HopeBridge logo" class="footer-logo-img" />
+            <span class="nav-logo-text"><span class="nav-logo-name">HopeBridge</span></span>
+          </a>
+          <p>Creating sustainable change through community empowerment, education, and compassionate action.</p>
+        </div>
+        <nav class="footer-col" aria-label="Footer quick links">
+          <p class="footer-col-heading">Quick Links</p>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="campaigns.html">Our Campaigns</a></li>
+            <li><a href="donate.html">Make a Donation</a></li>
+            <li><a href="volunteer.html">Volunteer With Us</a></li>
+          </ul>
+        </nav>
+        <address class="footer-col" style="font-style:normal">
+          <p class="footer-col-heading">Contact Us</p>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>123 Hope Street, Charity City, Galle Road, Colombo</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+            <a href="tel:+94112875676">+94 112 875 676</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:info@hopebridge.org">info@hopebridge.org</a>
+          </div>
+        </address>
+        <div class="footer-col">
+          <p class="footer-col-heading">Follow Us</p>
+          <nav class="footer-social" aria-label="Social media links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Twitter">𝕏</a>
+            <a href="#" aria-label="Instagram">in</a>
+            <a href="#" aria-label="LinkedIn">Li</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 HopeBridge. All rights reserved.</p>
+        <nav class="footer-legal" aria-label="Legal links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/donate.js"></script>
+
+  <!-- Chart.js - doughnut chart -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+  <script>
+    
+    var ctx = document.getElementById('donationChart');
+    new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+        labels: ['Education','Health','Environment','Community Development','Disaster Relief','Youth Development','Animal Welfare','Arts & Culture'],
+        datasets: [{
+          data: [28, 20, 17, 14, 10, 6, 3, 2],
+          backgroundColor: ['#C85A3A','#1A8080','#4a9e5c','#F2824A','#D4A04A','#8B6FD4','#5B9BD5','#d0d0d0'],
+          borderWidth: 2,
+          borderColor: '#ffffff'
+        }]
+      },
+      options: {
+        cutout: '60%',
+        plugins: { legend: { display: false } }
+      }
+    });
+  </script>
+</body>
+</html>
